@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/InicioSesion"
+    tools:context=".InicioSesion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/inicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/alata"
+            android:text="Iniciar sesión"
+            android:textAlignment="center"
+            android:textColor="#FFEBA6"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/olvidasteContraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="240dp"
+            android:layout_marginStart="130dp"
+            android:fontFamily="@font/alata"
+            android:text="¿Olvidaste tú contraseña?"
+            android:textAlignment="center"
+            android:textColor="#A4ABAB"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/registrate"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/alata"
+            android:text="Registrate"
+            android:textAlignment="center"
+            android:textColor="#A4ABAB"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/fondonombreOusuario"
+            android:layout_width="310dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="-285dp"
+            android:background="@drawable/stylo_borde_editext"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Contraseña" />
+
+        <TextView
+            android:id="@+id/nombreOusuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="-20dp"
+            android:fontFamily="@font/karla"
+            android:text="Nombre o usuario"
+            android:textColor="#A4ABAB" />
+
+        <EditText
+            android:id="@+id/fondocontraseña"
+            android:layout_width="300dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/stylo_borde_editext"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Contraseña" />
+
+        <TextView
+            android:id="@+id/contraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="-20dp"
+            android:fontFamily="@font/karla"
+            android:text="Contraseña"
+            android:textColor="#A4ABAB" />
+
+        <ImageView
+            android:id="@+id/paneles2"
+            android:layout_width="170dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginRight="200dp"
+            android:alpha=".3"
+
+            app:srcCompat="@drawable/solar_panels_couple" />
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="83dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-330dp"
+            android:backgroundTint="#454E5F"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/button" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
