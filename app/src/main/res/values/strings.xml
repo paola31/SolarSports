@@ -7,4 +7,6 @@
     <string name="contraseña_hint">contraseña</string>
     <string name="olvidaste_t_contrase_a">¿Olvidaste tú contraseña?</string>
     <string name="registrate">Registrate</string>
+    <string name="confirmar_contrase_a">Confirmar contraseña</string>
+    <string name="nueva_contrase_a">Nueva contraseña</string>
 </resources>

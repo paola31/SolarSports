@@ -1,27 +1,28 @@
 package com.example.solarsports;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.ImageView;
 
-
-public class InicioSesion extends AppCompatActivity
+public class RecuperarContrasena extends AppCompatActivity
 {
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inicio_sesion);
+        setContentView(R.layout.activity_recuperar_contrasena);
 
-        TextView textView = findViewById(R.id.olvidasteContraseña);
-        textView.setOnClickListener(new View.OnClickListener()
+        ImageView imageView = findViewById(R.id.button1_logOut);
+        imageView.setOnClickListener(new View.OnClickListener()
         {
+            @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(InicioSesion.this, RecuperarContrasena.class);
+                Intent intent = new Intent(RecuperarContrasena.this, InicioSesion.class);
                 startActivity(intent);
             }
         });

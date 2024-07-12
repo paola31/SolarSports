@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#454E5F"
-    tools:context=".InicioSesion">
+    tools:context=".RecuperarContrasena">
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
@@ -17,56 +17,85 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
+        <ImageButton
+            android:id="@+id/button1_logOut"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
             android:layout_gravity="center"
-            android:layout_marginTop="-30dp"
-            android:contentDescription="@string/logo_desc"
-            app:srcCompat="@drawable/logo" />
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#454E5F"
+            android:rotation="180"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/button" />
 
         <TextView
-            android:id="@+id/inicioSesion"
+            android:id="@+id/recuperacioContraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="-10dp"
+            android:layout_marginTop="30dp"
             android:fontFamily="@font/alata"
-            android:text="@string/iniciar_sesi_n"
+            android:text="Recuperación contraseña"
             android:textAlignment="center"
             android:textColor="#FFEBA6"
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/nombreOusuario"
+            android:id="@+id/correoRegistrado"
             android:layout_width="280dp"
             android:layout_height="31dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:background="@drawable/stylo_borde_editext"
             android:ems="10"
-            android:hint="@string/nombre_o_usuario_hint"
+            android:hint="Correo electrónico registrado"
             android:inputType="text"
             android:textColorHint="#A4ABAB"
             android:textSize="11sp" />
 
+        <TextView
+            android:id="@+id/reestableceContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/alata"
+            android:text="Reestablece la contraseña"
+            android:textAlignment="center"
+            android:textColor="#FFEBA6"
+            android:textSize="18sp" />
+
         <EditText
-            android:id="@+id/contraseña"
+            android:id="@+id/nuevaContraseña"
+            android:layout_width="280dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/stylo_borde_editext"
+            android:ems="10"
+            android:hint="@string/nueva_contrase_a"
+            android:inputType="textPassword"
+            android:textColorHint="#A4ABAB"
+            android:textSize="11sp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/ConfirmarContraseña"
             android:layout_width="280dp"
             android:layout_height="31dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:background="@drawable/stylo_borde_editext"
             android:ems="10"
-            android:hint="@string/contraseña_hint"
+            android:hint="@string/confirmar_contrase_a"
             android:inputType="textPassword"
             android:textColorHint="#A4ABAB"
-            tools:ignore="MissingConstraints"
-            android:textSize="11sp"/>
+            android:textSize="11sp"
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
-            android:id="@+id/button1_login_Sesion"
+            android:id="@+id/button1_login_Recuper"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_gravity="center"
@@ -75,35 +104,11 @@
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/button" />
 
-        <TextView
-            android:id="@+id/olvidasteContraseña"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/alata"
-            android:text="@string/olvidaste_t_contrase_a"
-            android:textAlignment="center"
-            android:textColor="#A4ABAB"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/registrate"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/alata"
-            android:text="@string/registrate"
-            android:textAlignment="center"
-            android:textColor="#A4ABAB"
-            android:textSize="16sp" />
-
         <ImageView
             android:id="@+id/paneles2"
             android:layout_width="120dp"
             android:layout_height="150dp"
-            android:layout_marginTop="-62dp"
+            android:layout_marginTop="-50dp"
             android:alpha=".3"
             app:srcCompat="@drawable/solar_panels_couple"
             tools:ignore="NotSibling" />
@@ -114,7 +119,18 @@
         android:id="@+id/eye"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="310dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginRight="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eye"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/eye1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="390dp"
         android:layout_marginRight="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -122,3 +138,4 @@
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
