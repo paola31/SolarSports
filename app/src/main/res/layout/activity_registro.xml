@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/logOut"
+            android:id="@+id/logOutResgistro"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_gravity="center"
@@ -30,58 +30,62 @@
             app:srcCompat="@drawable/button" />
 
         <TextView
-            android:id="@+id/recuperacioContraseña"
+            android:id="@+id/registrate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/alata"
-            android:text="Recuperación contraseña"
+            android:text="Registrate"
             android:textAlignment="center"
             android:textColor="#FFEBA6"
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/correoRegistrado"
+            android:id="@+id/nombreCompleto"
             android:layout_width="280dp"
             android:layout_height="31dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:background="@drawable/stylo_borde_editext"
             android:ems="10"
-            android:hint="Correo electrónico registrado"
+            android:hint="Nombre completo"
             android:inputType="text"
             android:textColorHint="#A4ABAB"
             android:textSize="11sp" />
 
-        <TextView
-            android:id="@+id/reestableceContraseña"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:fontFamily="@font/alata"
-            android:text="Reestablece la contraseña"
-            android:textAlignment="center"
-            android:textColor="#FFEBA6"
-            android:textSize="18sp" />
+
 
         <EditText
-            android:id="@+id/nuevaContraseña"
+            android:id="@+id/correo"
             android:layout_width="280dp"
             android:layout_height="31dp"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:background="@drawable/stylo_borde_editext"
             android:ems="10"
-            android:hint="@string/nueva_contrase_a"
+            android:hint="Correo"
+            android:inputType="text"
+            android:textColorHint="#A4ABAB"
+            android:textSize="11sp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/contraseñaRegistro"
+            android:layout_width="280dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/stylo_borde_editext"
+            android:ems="10"
+            android:hint="Contraseña"
             android:inputType="textPassword"
             android:textColorHint="#A4ABAB"
             android:textSize="11sp"
             tools:ignore="MissingConstraints" />
 
         <EditText
-            android:id="@+id/ConfirmarContraseña"
+            android:id="@+id/ConfirmarContraseñaRegis"
             android:layout_width="280dp"
             android:layout_height="31dp"
             android:layout_gravity="center"
@@ -119,7 +123,7 @@
         android:id="@+id/eye"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="330dp"
+        android:layout_marginTop="310dp"
         android:layout_marginRight="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -130,7 +134,7 @@
         android:id="@+id/eye1"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="390dp"
+        android:layout_marginTop="370dp"
         android:layout_marginRight="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

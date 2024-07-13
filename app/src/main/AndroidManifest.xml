@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <meta-data
+        android:name="preloaded_fonts"
+        android:resource="@array/preloaded_fonts" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,25 +17,26 @@
         android:theme="@style/Theme.SolarSports"
         tools:targetApi="31">
         <activity
+            android:name=".PantallaPpal"
+            android:exported="true" />
+        <activity
+            android:name=".Registro"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true"/>
-
+            android:exported="true" />
         <activity
             android:name=".InicioSesion"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".RecuperarContrasena"
-            android:exported="true"/>
-        </application>
+            android:exported="true" />
+    </application>
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
-    </manifest>
-
+</manifest>
