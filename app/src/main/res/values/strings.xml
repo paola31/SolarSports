@@ -10,4 +10,15 @@
     <string name="confirmar_contrase_a">Confirmar contraseña</string>
     <string name="nueva_contrase_a">Nueva contraseña</string>
     <string name="nombre_completo">Nombre completo</string>
+    <string name="selecci_n">Selección</string>
+
+    <string name="selecciona">Seleccionar</string>
+    <string name="Código">código</string>
+    <string-array name="spinnner_options">
+        <item>Cancha de fútbol</item>
+        <item>Cancha de tennis</item>
+        <item>Pista de patinaje</item>
+        <item>Piscina</item>
+        <item>Parque de barras</item>
+    </string-array>
 </resources>

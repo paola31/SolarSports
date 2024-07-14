@@ -34,7 +34,8 @@
                 app:layout_constraintHorizontal_bias="0.881"
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/lupa"
-                tools:layout_editor_absoluteY="0dp" />
+                tools:layout_editor_absoluteY="0dp"
+                tools:visibility="invisible" />
 
             <ImageView
                 android:id="@+id/button"
@@ -45,7 +46,8 @@
                 app:layout_constraintHorizontal_bias="0.986"
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/button_header"
-                tools:layout_editor_absoluteY="0dp" />
+                tools:layout_editor_absoluteY="0dp"
+                tools:ignore="MissingConstraints" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

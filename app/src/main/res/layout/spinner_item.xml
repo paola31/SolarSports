@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spinner_itemTextView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="12sp"
+    android:fontFamily="@font/karla"
+    android:textColor="#A4ABAB"
+    android:padding="8dp"
+    android:layout_gravity="center_vertical"/>
+

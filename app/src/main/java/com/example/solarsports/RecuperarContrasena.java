@@ -4,9 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class RecuperarContrasena extends AppCompatActivity
 {
@@ -16,6 +19,13 @@ public class RecuperarContrasena extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recuperar_contrasena);
+
+        TextView textViewCalcular = findViewById(R.id.enviarCodigo);
+        SpannableString content = new SpannableString("Enviar código");
+        content.setSpan(new UnderlineSpan(), 0, content.length(),0);
+        textViewCalcular.setText(content);
+
+
 
         ImageButton logoutButton = findViewById(R.id.logOut);
         logoutButton.setOnClickListener(new View.OnClickListener()
@@ -34,7 +44,7 @@ public class RecuperarContrasena extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(RecuperarContrasena.this, InicioSesion.class);
+                Intent intent = new Intent(RecuperarContrasena.this, RecuperarContrasenaConf.class);
                 startActivity(intent);
             }
         });

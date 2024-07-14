@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="StyleSpinner">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/karla</item>
+        <item name="android:textColor">#A4ABAB</item>
+        <item name="backgroundColor">#D9D9D9</item>
+        <item name="android:backgroundTint">#D9D9D9</item>
+
+    </style>
+</resources>

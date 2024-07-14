@@ -55,13 +55,28 @@
             android:textSize="11sp" />
 
         <TextView
+            android:id="@+id/enviarCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/alata"
+            android:text="Enviar código"
+            android:textAlignment="center"
+            android:textColor="#A4ABAB"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <TextView
             android:id="@+id/reestableceContraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="70dp"
             android:fontFamily="@font/alata"
-            android:text="Reestablece la contraseña"
+            android:text="Ingresa el código"
             android:textAlignment="center"
             android:textColor="#FFEBA6"
             android:textSize="18sp" />
@@ -71,24 +86,10 @@
             android:layout_width="280dp"
             android:layout_height="31dp"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="25dp"
             android:background="@drawable/stylo_borde_editext"
             android:ems="10"
-            android:hint="@string/nueva_contrase_a"
-            android:inputType="textPassword"
-            android:textColorHint="#A4ABAB"
-            android:textSize="11sp"
-            tools:ignore="MissingConstraints" />
-
-        <EditText
-            android:id="@+id/ConfirmarContraseña"
-            android:layout_width="280dp"
-            android:layout_height="31dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/stylo_borde_editext"
-            android:ems="10"
-            android:hint="@string/confirmar_contrase_a"
+            android:hint="@string/Código"
             android:inputType="textPassword"
             android:textColorHint="#A4ABAB"
             android:textSize="11sp"
@@ -114,28 +115,6 @@
             tools:ignore="NotSibling" />
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/eye"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="330dp"
-        android:layout_marginRight="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/eye"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/eye1"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="390dp"
-        android:layout_marginRight="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/eye"
-        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
