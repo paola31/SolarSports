@@ -29,7 +29,13 @@ public class CalculoPaneles extends AppCompatActivity
         TextView textViewCalcular = findViewById(R.id.calcular);
         SpannableString content = new SpannableString("Calcular");
         content.setSpan(new UnderlineSpan(), 0, content.length(),0);
-        textViewCalcular.setText(content);
+
+        TextView textViewEstadiscticas = findViewById(R.id.verEstadisticas);
+        SpannableString content = new SpannableString("Ver estadisticas");
+        content.setSpan(new UnderlineSpan(), 0, content.length(),0);
+
+
 
     }
+
 }

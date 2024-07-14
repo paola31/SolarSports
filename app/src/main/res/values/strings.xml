@@ -15,10 +15,8 @@
     <string name="selecciona">Seleccionar</string>
     <string name="Código">código</string>
     <string-array name="spinnner_options">
-        <item>Cancha de fútbol</item>
-        <item>Cancha de tennis</item>
-        <item>Pista de patinaje</item>
-        <item>Piscina</item>
-        <item>Parque de barras</item>
+        <item>Panel monocristalino</item>
+        <item>Panel policristalino</item>
+        <item>Panel solar flexible</item>
     </string-array>
 </resources>
