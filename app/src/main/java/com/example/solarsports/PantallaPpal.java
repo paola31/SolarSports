@@ -39,5 +39,17 @@ public class PantallaPpal extends AppCompatActivity
                 startActivity(intent);
             }
         });
+
+        Button buttonEnergia = findViewById(R.id.produccionEnergia);
+        buttonEnergia.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(PantallaPpal.this, CalculoEnergia.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

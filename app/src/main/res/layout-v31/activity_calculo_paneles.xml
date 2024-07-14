@@ -116,9 +116,9 @@
                 android:id="@+id/hands"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/hand"
                 tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="-1dp"
                 tools:layout_editor_absoluteY="-1dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -264,14 +264,14 @@
 
     <ImageView
         android:id="@+id/arrowLeft"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="@+id/franjaSuperior"
-        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintHorizontal_bias="0.864"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.945"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/arrow_left" />
 
 

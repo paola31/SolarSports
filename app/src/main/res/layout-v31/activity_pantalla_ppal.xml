@@ -85,13 +85,13 @@
             tools:layout_editor_absoluteY="120dp" />
 
         <Button
-            android:id="@+id/estadisticas"
+            android:id="@+id/beneficios"
             android:layout_width="300dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
             android:backgroundTint="#2397896D"
-            android:text="Estadisticas"
+            android:text="Beneficios"
             android:textAlignment="textStart"
             android:textColor="#FFEBA6"
             android:textSize="16sp"
@@ -101,13 +101,13 @@
             tools:layout_editor_absoluteY="120dp" />
 
         <Button
-            android:id="@+id/beneficios"
+            android:id="@+id/tipSostenibles"
             android:layout_width="300dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
             android:backgroundTint="#2397896D"
-            android:text="Beneficios"
+            android:text="Tips sostenibles"
             android:textAlignment="textStart"
             android:textColor="#FFEBA6"
             android:textSize="16sp"
@@ -147,7 +147,7 @@
         tools:ignore="MissingConstraints,NotSibling" />
 
     <ImageView
-        android:id="@+id/iconoEstadistcias"
+        android:id="@+id/iconoBeneficios"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="350dp"
@@ -156,20 +156,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/diagram"
+        app:srcCompat="@drawable/renewable"
         tools:ignore="MissingConstraints,NotSibling" />
 
     <ImageView
-        android:id="@+id/iconoBeneficios"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/iconoTips"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginTop="465dp"
-        android:layout_marginLeft="210dp"
+        android:layout_marginLeft="245dp"
         app:layout_constraintBottom_toBottomOf="@id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/renewable"
+        app:srcCompat="@drawable/icocno_tips"
         tools:ignore="MissingConstraints,NotSibling" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
