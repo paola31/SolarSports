@@ -40,7 +40,7 @@ public class PantallaPpal extends AppCompatActivity
             }
         });
 
-        Button buttonEnergia = findViewById(R.id.produccionEnergia);
+        Button buttonEnergia = findViewById(R.id.calculoEnergia);
         buttonEnergia.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -50,6 +50,18 @@ public class PantallaPpal extends AppCompatActivity
                 startActivity(intent);
             }
         });
+
+        Button ventaEnergia = findViewById(R.id.ventaEnergia);
+        ventaEnergia.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(PantallaPpal.this, VentaEnergia.class);
+                startActivity(intent);
+            }
+        });
+
 
         Button buttontips = findViewById(R.id.tipSostenibles);
         buttontips.setOnClickListener(new View.OnClickListener()

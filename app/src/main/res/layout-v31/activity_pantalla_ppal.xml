@@ -69,13 +69,13 @@
             tools:layout_editor_absoluteY="120dp" />
 
         <Button
-            android:id="@+id/produccionEnergia"
+            android:id="@+id/calculoEnergia"
             android:layout_width="300dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
             android:backgroundTint="#2397896D"
-            android:text="Producción de energía"
+            android:text="Calcúlo de energía"
             android:textAlignment="textStart"
             android:textColor="#FFEBA6"
             android:textSize="16sp"
@@ -85,13 +85,13 @@
             tools:layout_editor_absoluteY="120dp" />
 
         <Button
-            android:id="@+id/beneficios"
+            android:id="@+id/ventaEnergia"
             android:layout_width="300dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
             android:backgroundTint="#2397896D"
-            android:text="Beneficios"
+            android:text="Venta de energía"
             android:textAlignment="textStart"
             android:textColor="#FFEBA6"
             android:textSize="16sp"

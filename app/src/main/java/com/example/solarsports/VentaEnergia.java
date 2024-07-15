@@ -7,14 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class TipsSostenibles extends AppCompatActivity
+public class VentaEnergia extends AppCompatActivity
 {
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tips_sostenibles);
+        setContentView(R.layout.activity_venta_energia);
 
         ImageView imageViewArrow = findViewById(R.id.arrowLeft);
         imageViewArrow.setOnClickListener(new View.OnClickListener()
@@ -22,18 +22,7 @@ public class TipsSostenibles extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(TipsSostenibles.this, PantallaPpal.class);
-                startActivity(intent);
-            }
-        });
-
-        ImageView imageViewlogout = findViewById(R.id.button);
-        imageViewlogout.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent = new Intent(TipsSostenibles.this, VentaEnergia.class);
+                Intent intent = new Intent(VentaEnergia.this, Estadisticas.class);
                 startActivity(intent);
             }
         });

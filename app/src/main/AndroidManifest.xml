@@ -17,10 +17,16 @@
         android:theme="@style/Theme.SolarSports"
         tools:targetApi="31">
         <activity
+            android:name=".CalculoEnergia"
+            android:exported="true" />
+        <activity
             android:name=".TipsSostenibles"
             android:exported="true" />
         <activity
-            android:name=".CalculoEnergia"
+            android:name=".Estadisticas"
+            android:exported="true" />
+        <activity
+            android:name=".VentaEnergia"
             android:exported="true" />
         <activity
             android:name=".RecuperarContrasenaConf"
@@ -36,20 +42,18 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
-        <activity
-            android:name=".InicioSesion"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
+            android:name=".InicioSesion"
+            android:exported="true" />
+        <activity
             android:name=".RecuperarContrasena"
             android:exported="true" />
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
