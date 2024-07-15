@@ -4,6 +4,213 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TipsSostenibles">
+    android:background="#454E5F"
+    android:visibility="visible"
+    tools:context=".RecuperarContrasena">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/franjaSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#66958566"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/button"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:rotationY="180"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.986"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/button_header"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="0dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/arrowLeft"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="@+id/franjaSuperior"
+        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_left" />
+
+    <TextView
+        android:id="@+id/tipsSosteniblesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/alata"
+        android:text="Tips sostenibles"
+        android:textAlignment="center"
+        android:textColor="#FFEBA6"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@+id/franjaSuperior"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="350dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/franjaSuperior"
+        app:layout_constraintVertical_bias="0.147"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/EnergiaText"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/alata"
+                android:text="Energía cinética para gimansios "
+                android:textAlignment="center"
+                android:textColor="#B2852C"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bicycle" />
+
+            <TextView
+                android:id="@+id/infoCinetica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#33363F"
+                android:fontFamily="@font/alata"
+                android:text="Un gimnasio ecológico abierto en Rochester, Nueva York, que no consume electricidad, sino al revés: sus máquinas de ejercicio crean electricidad. Porque el Eco Gym está equipado con una serie de bicicletas estáticas que se dedican a capturar la energía producida durante una sesión de cardio y transformarla en electricidad para dar luz al edificio entero en el que el Eco Gym está ubicado. El Eco Gym dispone de 21 máquinas de cardio distribuidas entre bicis estáticas, elípticas y bicis reclinadas. Cada una está preparada para convertir la energía humana derivada del pedaleo en electricidad útil y aprovechable a través de una tecnología ‘micro-inversora’ ,capaz de transformar la sesión de cardio en más de 160 vatios a la hora. "
+                android:textAlignment="center"
+                android:textColor="#A4ABAB"
+                android:textSize="14sp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/stylo_borde_constrain"
+        android:backgroundTint="#33363F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.621">
+
+        <TextView
+            android:id="@+id/alidosOpciones"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/alata"
+            android:text="*Autosolar Colombia *SolarGreen *Copérnico sas"
+            android:textColor="#FFEBA6"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.066"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/aliados"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/alata"
+        android:text="Conocé nuestros aliados"
+        android:textAlignment="center"
+        android:textColor="#B2852C"
+        android:textSize="18sp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656"
+        app:srcCompat="@drawable/energy_sharing_power"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.883"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/iconFacebook"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/iconInstagram"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/iconlinkedin"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/linkedin" />
+
+        <ImageView
+            android:id="@+id/icontiktok"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/tiktok" />
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

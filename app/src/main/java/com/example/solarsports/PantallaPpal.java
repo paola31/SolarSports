@@ -51,5 +51,16 @@ public class PantallaPpal extends AppCompatActivity
             }
         });
 
+        Button buttontips = findViewById(R.id.tipSostenibles);
+        buttontips.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(PantallaPpal.this, TipsSostenibles.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

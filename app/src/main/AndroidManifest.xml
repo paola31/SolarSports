@@ -18,7 +18,7 @@
         tools:targetApi="31">
         <activity
             android:name=".TipsSostenibles"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".CalculoEnergia"
             android:exported="true" />
