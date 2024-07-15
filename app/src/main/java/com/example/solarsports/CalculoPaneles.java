@@ -34,10 +34,6 @@ public class CalculoPaneles extends AppCompatActivity
         calcularContent.setSpan(new UnderlineSpan(), 0, calcularContent.length(),0);
         textViewCalcular.setText(calcularContent);
 
-        TextView textViewEstadiscticas = findViewById(R.id.verEstadisticas);
-        SpannableString estadisticasContent = new SpannableString("Ver estadisticas");
-        estadisticasContent.setSpan(new UnderlineSpan(), 0, estadisticasContent.length(),0);
-        textViewEstadiscticas.setText(estadisticasContent);
 
         ImageView imageViewArrow = findViewById(R.id.arrowLeft);
         imageViewArrow.setOnClickListener(new View.OnClickListener()
@@ -50,16 +46,7 @@ public class CalculoPaneles extends AppCompatActivity
             }
         });
 
-        ImageView imageViewEstadisticas = findViewById(R.id.iconoEstadistcias);
-        imageViewEstadisticas.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent = new Intent(CalculoPaneles.this, Estadisticas.class);
-                startActivity(intent);
-            }
-        });
+
 
         ImageView imageViewlogout = findViewById(R.id.button);
         imageViewlogout.setOnClickListener(new View.OnClickListener()

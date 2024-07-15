@@ -2,7 +2,9 @@ package com.example.solarsports;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
@@ -32,7 +34,31 @@ public class Estadisticas extends AppCompatActivity
         lineChart = findViewById(R.id.lineChart);
         setupLineChart();
         loadChartData();
+
+        ImageView imageViewArrow = findViewById(R.id.arrowLeft);
+        imageViewArrow.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(Estadisticas.this, CalculoEnergia.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView imageViewlogout = findViewById(R.id.button);
+        imageViewlogout.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(Estadisticas.this, InicioSesion.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
 
     private void setupLineChart() {
         lineChart.getDescription().setEnabled(false);

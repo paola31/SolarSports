@@ -21,10 +21,9 @@
             android:layout_height="35dp"
             android:background="#66958566"
             android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="57dp"
-            tools:layout_editor_absoluteY="0dp"
-            tools:ignore="MissingConstraints">
-
+            tools:layout_editor_absoluteY="0dp">
 
             <ImageView
                 android:id="@+id/button"
@@ -44,6 +43,39 @@
             android:id="@+id/lineChart"
             android:layout_width="match_parent"
             android:layout_height="400dp"
-            android:layout_marginTop="20dp"/>
+            android:background="#66958566"
+            android:alpha=".3"
+            android:layout_marginTop="100dp" />
+
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/arrowLeft"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="330dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/arrow_left"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/estadisticasanual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/alata"
+        android:text="Estadídticas de energía anual"
+        android:textAlignment="center"
+        android:textColor="#FFEBA6"
+        android:layout_marginTop="-380dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout1"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

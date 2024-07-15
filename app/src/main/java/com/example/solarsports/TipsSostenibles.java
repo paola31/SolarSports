@@ -22,7 +22,7 @@ public class TipsSostenibles extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(TipsSostenibles.this, PantallaPpal.class);
+                Intent intent = new Intent(TipsSostenibles.this, VentaEnergia.class);
                 startActivity(intent);
             }
         });

@@ -54,9 +54,9 @@
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.631"
+            app:layout_constraintVertical_bias="0.662"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="4dp" />
+            tools:layout_editor_absoluteX="10dp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
@@ -65,8 +65,8 @@
             android:background="@drawable/stylo_borde_editext"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.83"
-            tools:layout_editor_absoluteX="4dp">
+            app:layout_constraintVertical_bias="0.906"
+            tools:layout_editor_absoluteX="10dp">
 
             <TextView
                 android:id="@+id/TextresultCantPaneles"
@@ -129,41 +129,13 @@
             android:id="@+id/arrowRigth"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginBottom="84dp"
+            android:layout_marginBottom="104dp"
             app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.675"
+            app:layout_constraintHorizontal_bias="0.678"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/arrow_right" />
 
-        <TextView
-            android:id="@+id/verEstadisticas"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/alata"
-            android:text="Ver estadisticas"
-            android:textAlignment="center"
-            android:textColor="#B2852C"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="10dp" />
-
-        <ImageView
-            android:id="@+id/iconoEstadistcias"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="210dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.26"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.969"
-            app:srcCompat="@drawable/diagram"
-            tools:ignore="MissingConstraints,NotSibling" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
