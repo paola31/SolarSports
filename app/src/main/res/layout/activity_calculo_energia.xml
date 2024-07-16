@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#454E5F"
     android:visibility="visible"
-    tools:context=".RecuperarContrasena">
+    tools:context=".CalculoEnergia">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/franjaSuperior"
@@ -17,7 +17,6 @@
         tools:layout_editor_absoluteX="57dp"
         tools:layout_editor_absoluteY="0dp"
         tools:ignore="MissingConstraints">
-
 
         <ImageView
             android:id="@+id/button"

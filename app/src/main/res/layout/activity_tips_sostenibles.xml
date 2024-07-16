@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#454E5F"
     android:visibility="visible"
-    tools:context=".RecuperarContrasena">
+    tools:context=".TipsSostenibles">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/franjaSuperior"
@@ -209,8 +209,6 @@
             android:layout_gravity="center"
             app:srcCompat="@drawable/tiktok" />
 
-
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,7 @@
     tools:context=".RecuperarContrasena">
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
+        android:id="@+id/reestableceContraseñaLinear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"

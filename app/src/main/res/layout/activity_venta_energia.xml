@@ -14,7 +14,6 @@
         tools:layout_editor_absoluteY="0dp"
         tools:ignore="MissingConstraints">
 
-
         <ImageView
             android:id="@+id/button"
             android:layout_width="30dp"
@@ -28,7 +27,6 @@
             tools:layout_editor_absoluteY="0dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
     <ImageView
         android:id="@+id/arrowLeft"
@@ -67,7 +65,8 @@
             android:textAlignment="center"
             android:textColor="@color/white"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="-13dp" />
+            tools:layout_editor_absoluteY="-13dp"
+            tools:ignore="MissingConstraints" />
 
         <GridLayout
             android:id="@+id/gridLayoutBoard"

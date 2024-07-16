@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:background="#454E5F"
     android:visibility="visible"
-    tools:context=".RecuperarContrasena">
+    tools:context=".PantallaPpal">
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
+        android:id="@+id/pantallappalLinear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
@@ -24,18 +24,6 @@
             android:layout_height="35dp"
             android:background="#66958566"
             android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/lupa"
-                android:layout_width="25dp"
-                android:layout_height="wrap_content"
-                android:rotationY="180"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.881"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/lupa"
-                tools:layout_editor_absoluteY="0dp"
-                tools:visibility="invisible" />
 
             <ImageView
                 android:id="@+id/button"
@@ -115,8 +103,6 @@
             tools:ignore="MissingConstraints,RtlCompat"
             tools:layout_editor_absoluteX="55dp"
             tools:layout_editor_absoluteY="120dp" />
-
-
 
     </LinearLayout>
 

@@ -8,7 +8,7 @@
     tools:context=".InicioSesion">
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/inicioSesionLinear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"

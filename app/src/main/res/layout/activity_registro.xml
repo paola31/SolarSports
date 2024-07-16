@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#454E5F"
-    tools:context=".RecuperarContrasena">
+    tools:context=".Registro">
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
+        android:id="@+id/registratelinear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
@@ -53,8 +53,6 @@
             android:inputType="text"
             android:textColorHint="#A4ABAB"
             android:textSize="11sp" />
-
-
 
         <EditText
             android:id="@+id/correo"

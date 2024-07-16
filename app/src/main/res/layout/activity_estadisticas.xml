@@ -136,8 +136,6 @@
             android:layout_gravity="center"
             app:srcCompat="@drawable/tiktok" />
 
-
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
