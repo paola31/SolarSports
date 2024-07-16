@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class VentaEnergia extends AppCompatActivity
 {
@@ -26,5 +29,10 @@ public class VentaEnergia extends AppCompatActivity
                 startActivity(intent);
             }
         });
+
+        TextView textViewCalcular = findViewById(R.id.textoSolicitar);
+        SpannableString calcularContent = new SpannableString("Solicitalo aquí");
+        calcularContent.setSpan(new UnderlineSpan(), 0, calcularContent.length(),0);
+        textViewCalcular.setText(calcularContent);
     }
 }

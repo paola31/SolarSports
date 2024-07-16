@@ -43,7 +43,7 @@
             android:id="@+id/lineChart"
             android:layout_width="match_parent"
             android:layout_height="400dp"
-            android:background="#66958566"
+            android:background="#958566"
             android:alpha=".3"
             android:layout_marginTop="100dp" />
 
@@ -77,5 +77,67 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@+id/linearLayout1"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/compartirReddes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="450dp"
+        android:fontFamily="@font/alata"
+        android:text="Compartir en redes"
+        android:textAlignment="center"
+        android:textColor="#FFEBA6"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout1"
+        app:layout_constraintVertical_bias="0.726"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="400dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/iconFacebook"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/iconInstagram"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/iconlinkedin"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/linkedin" />
+
+        <ImageView
+            android:id="@+id/icontiktok"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/tiktok" />
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
