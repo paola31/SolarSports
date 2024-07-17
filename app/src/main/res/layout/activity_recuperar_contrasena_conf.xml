@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#454E5F"
-    tools:context=".RecuperarContrasena">
+    tools:context=".RecuperarContrasenaConf">
 
     <LinearLayout
         android:id="@+id/reestableceContraseñaLinear"

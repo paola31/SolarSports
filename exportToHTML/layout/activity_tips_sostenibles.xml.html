@@ -1,0 +1,233 @@
+<html>
+<head>
+<title>activity_tips_sostenibles.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_tips_sostenibles.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;androidx.constraintlayout.widget.ConstraintLayout </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:background</span><span class="s2">=&quot;#454E5F&quot;</span>
+    <span class="s1">android:visibility</span><span class="s2">=&quot;visible&quot;</span>
+    <span class="s1">tools:context</span><span class="s2">=&quot;.TipsSostenibles&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;androidx.constraintlayout.widget.ConstraintLayout</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/franjaSuperior&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;35dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;#66958566&quot;</span>
+        <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+        <span class="s1">tools:layout_editor_absoluteX</span><span class="s2">=&quot;57dp&quot;</span>
+        <span class="s1">tools:layout_editor_absoluteY</span><span class="s2">=&quot;0dp&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;ImageView</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;30dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:rotationY</span><span class="s2">=&quot;180&quot;</span>
+            <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+            <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.986&quot;</span>
+            <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+            <span class="s1">app:srcCompat</span><span class="s2">=&quot;@drawable/button_header&quot;</span>
+            <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints&quot;</span>
+            <span class="s1">tools:layout_editor_absoluteY</span><span class="s2">=&quot;0dp&quot; </span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+
+    <span class="s0">&lt;ImageView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/arrowLeft&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;35dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;35dp&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;@+id/franjaSuperior&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.856&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:srcCompat</span><span class="s2">=&quot;@drawable/arrow_left&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/tipsSosteniblesText&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;52dp&quot;</span>
+        <span class="s1">android:fontFamily</span><span class="s2">=&quot;@font/alata&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;Tips sostenibles&quot;</span>
+        <span class="s1">android:textAlignment</span><span class="s2">=&quot;center&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;#FFEBA6&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;18sp&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;@+id/franjaSuperior&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints&quot;</span>
+        <span class="s1">tools:layout_editor_absoluteX</span><span class="s2">=&quot;0dp&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;ScrollView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/scrollView2&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;350dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;270dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;30dp&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/franjaSuperior&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.147&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints&quot;</span>
+        <span class="s1">tools:layout_editor_absoluteX</span><span class="s2">=&quot;30dp&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;LinearLayout</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;350dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;250dp&quot;</span>
+            <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;TextView</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/EnergiaText&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;350dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center&quot;</span>
+                <span class="s1">android:fontFamily</span><span class="s2">=&quot;@font/alata&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;Energía cinética para gimansios &quot;</span>
+                <span class="s1">android:textAlignment</span><span class="s2">=&quot;center&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#B2852C&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;16sp&quot;</span>
+                <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;ImageView</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;250dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;250dp&quot;</span>
+                <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center&quot;</span>
+                <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bicycle&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;TextView</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/infoCinetica&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center&quot;</span>
+                <span class="s1">android:background</span><span class="s2">=&quot;#33363F&quot;</span>
+                <span class="s1">android:fontFamily</span><span class="s2">=&quot;@font/alata&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;Un gimnasio ecológico abierto en Rochester, Nueva York, que no consume electricidad, sino al revés: sus máquinas de ejercicio crean electricidad. Porque el Eco Gym está equipado con una serie de bicicletas estáticas que se dedican a capturar la energía producida durante una sesión de cardio y transformarla en electricidad para dar luz al edificio entero en el que el Eco Gym está ubicado. El Eco Gym dispone de 21 máquinas de cardio distribuidas entre bicis estáticas, elípticas y bicis reclinadas. Cada una está preparada para convertir la energía humana derivada del pedaleo en electricidad útil y aprovechable a través de una tecnología ‘micro-inversora’ ,capaz de transformar la sesión de cardio en más de 160 vatios a la hora. &quot;</span>
+                <span class="s1">android:textAlignment</span><span class="s2">=&quot;center&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;#A4ABAB&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;14sp&quot;</span>
+                <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints&quot; </span><span class="s0">/&gt;</span>
+        <span class="s0">&lt;/LinearLayout&gt;</span>
+    <span class="s0">&lt;/ScrollView&gt;</span>
+
+    <span class="s0">&lt;androidx.constraintlayout.widget.ConstraintLayout</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;350dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;80dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;350dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;@drawable/stylo_borde_constrain&quot;</span>
+        <span class="s1">android:backgroundTint</span><span class="s2">=&quot;#33363F&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.491&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.621&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;TextView</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/alidosOpciones&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;140dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;80dp&quot;</span>
+            <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center&quot;</span>
+            <span class="s1">android:fontFamily</span><span class="s2">=&quot;@font/alata&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;*Autosolar Colombia *SolarGreen *Copérnico sas&quot;</span>
+            <span class="s1">android:textColor</span><span class="s2">=&quot;#FFEBA6&quot;</span>
+            <span class="s1">android:textSize</span><span class="s2">=&quot;14sp&quot;</span>
+            <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+            <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+            <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.066&quot;</span>
+            <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints&quot;</span>
+            <span class="s1">tools:layout_editor_absoluteX</span><span class="s2">=&quot;4dp&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/aliados&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;200dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center&quot;</span>
+        <span class="s1">android:fontFamily</span><span class="s2">=&quot;@font/alata&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;Conocé nuestros aliados&quot;</span>
+        <span class="s1">android:textAlignment</span><span class="s2">=&quot;center&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;#B2852C&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;18sp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;80dp&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.142&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.687&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;ImageView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/icono&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;70dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;40dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;100dp&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.779&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.656&quot;</span>
+        <span class="s1">app:srcCompat</span><span class="s2">=&quot;@drawable/energy_sharing_power&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;LinearLayout</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;250dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;50dp&quot;</span>
+        <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;400dp&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.186&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.883&quot;</span>
+        <span class="s1">tools:ignore</span><span class="s2">=&quot;MissingConstraints&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;ImageView</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/iconFacebook&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;25dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;25dp&quot;</span>
+            <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center&quot;</span>
+            <span class="s1">app:srcCompat</span><span class="s2">=&quot;@drawable/facebook&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;ImageView</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/iconInstagram&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;25dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;25dp&quot;</span>
+            <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center&quot;</span>
+            <span class="s1">app:srcCompat</span><span class="s2">=&quot;@drawable/instagram&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;ImageView</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/iconlinkedin&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;25dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;25dp&quot;</span>
+            <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center&quot;</span>
+            <span class="s1">app:srcCompat</span><span class="s2">=&quot;@drawable/linkedin&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;ImageView</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/icontiktok&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;25dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;25dp&quot;</span>
+            <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center&quot;</span>
+            <span class="s1">app:srcCompat</span><span class="s2">=&quot;@drawable/tiktok&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;/LinearLayout&gt;</span>
+
+<span class="s0">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span></pre>
+</body>
+</html>

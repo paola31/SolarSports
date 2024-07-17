@@ -7,6 +7,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
+        vectorDrawables.useSupportLibrary = true
         applicationId = "com.example.solarsports"
         minSdk = 24
         targetSdk = 34

@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="-10dp"
             android:fontFamily="@font/alata"
             android:text="Registrate"
             android:textAlignment="center"
@@ -101,7 +101,7 @@
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="90dp"
             android:backgroundTint="#454E5F"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/button" />
@@ -121,7 +121,7 @@
         android:id="@+id/eye"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="310dp"
+        android:layout_marginTop="270dp"
         android:layout_marginRight="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -132,12 +132,49 @@
         android:id="@+id/eye1"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="370dp"
+        android:layout_marginTop="330dp"
         android:layout_marginRight="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/eye"
         tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/terminosCondiciones"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="220dp"
+        android:button="@drawable/checkbox_selector"
+        android:buttonTint="#815757"
+        android:fontFamily="@font/alata"
+        android:text=" Acepto términos y condiciones"
+        android:textAlignment="center"
+        android:textColor="#A4ABAB"
+        android:textColorHint="#883838"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/tratamientoDatos"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="280dp"
+        android:button="@drawable/checkbox_selector"
+        android:buttonTint="#815757"
+        android:fontFamily="@font/alata"
+        android:text="    Tratamiento de datos"
+        android:layout_marginRight="20dp"
+        android:textAlignment="textStart"
+        android:textColor="#A4ABAB"
+        android:textColorHint="#883838"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
