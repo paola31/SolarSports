@@ -25,7 +25,18 @@ public class VentaEnergia extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(VentaEnergia.this, Estadisticas.class);
+                Intent intent = new Intent(VentaEnergia.this, CalculoEnergia.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView imageViewlogout = findViewById(R.id.button);
+        imageViewlogout.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(VentaEnergia.this, InicioSesion.class);
                 startActivity(intent);
             }
         });

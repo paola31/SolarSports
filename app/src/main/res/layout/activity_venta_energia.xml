@@ -64,9 +64,9 @@
             android:text="Si tu sistema de paneles solares produce más energía de la que consumes, puedes vender el excedente inyectándolo de vuelta a la red eléctrica. Para ello, puedes solicitar un contador bidireccional y su instalación a través de nuestra plataforma. "
             android:textAlignment="center"
             android:textColor="@color/white"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="-13dp"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintBottom_toTopOf="@+id/gridLayoutBoard"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp" />
 
         <GridLayout
             android:id="@+id/gridLayoutBoard"
@@ -132,7 +132,7 @@
                 android:id="@+id/textCantidadEnergia"
                 android:layout_width="90dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/alata"
                 android:text="Energia extra Kwh"
                 android:textAlignment="center"
