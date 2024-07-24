@@ -35,20 +35,7 @@ public class CalculoPaneles extends AppCompatActivity
         textViewCalcular.setText(calcularContent);
 
 
-        ImageView imageViewArrow = findViewById(R.id.arrowLeft);
-        imageViewArrow.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent = new Intent(CalculoPaneles.this, PantallaPpal.class);
-                startActivity(intent);
-            }
-        });
-
-
-
-        ImageView imageViewlogout = findViewById(R.id.button);
+        ImageView imageViewlogout = findViewById(R.id.buttonlogout);
         imageViewlogout.setOnClickListener(new View.OnClickListener()
         {
             @Override

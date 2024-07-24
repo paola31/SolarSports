@@ -8,39 +8,32 @@
     android:visibility="visible"
     tools:context=".CalculoPaneles">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/franjaSuperior"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:background="#66958566"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/button"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:rotationY="180"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.986"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/button_header"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="0dp" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <GridLayout
+        android:id="@+id/gridLayoutBoar6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-60dp"
+        android:layout_weight="1"
+        android:columnCount="2"
+        android:padding="8dp"
+        android:rowCount="4"
+        app:circularflow_radiusInDP="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="340dp"
         android:layout_height="470dp"
+        android:layout_row="0"
+        android:layout_column="2"
         android:background="@drawable/stylo_borde_constrain"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/franjaSuperior">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/calcular"
@@ -66,8 +59,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.906"
-            tools:layout_editor_absoluteX="10dp"
-            tools:ignore="MissingConstraints">
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="10dp">
 
             <TextView
                 android:id="@+id/TextresultCantPaneles"
@@ -224,17 +217,31 @@
 
     </GridLayout>
 
-    <ImageView
-        android:id="@+id/arrowLeft"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
-        app:layout_constraintEnd_toEndOf="@+id/franjaSuperior"
-        app:layout_constraintHorizontal_bias="0.864"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/franjaInferior"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/stylo_borde_constrain_blue"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/arrow_left" />
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:rotationY="180"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            app:srcCompat="@drawable/button_header"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
