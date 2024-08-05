@@ -35,7 +35,7 @@ public class CalculoPaneles extends AppCompatActivity
         textViewCalcular.setText(calcularContent);
 
 
-        ImageView imageViewlogout = findViewById(R.id.buttonlogout);
+        ImageView imageViewlogout = findViewById(R.id.buttonLogout);
         imageViewlogout.setOnClickListener(new View.OnClickListener()
         {
             @Override

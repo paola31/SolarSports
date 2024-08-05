@@ -25,8 +25,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
-        android:layout_width="340dp"
-        android:layout_height="470dp"
+        android:layout_width="335dp"
+        android:layout_height="363dp"
         android:layout_row="0"
         android:layout_column="2"
         android:background="@drawable/stylo_borde_constrain"
@@ -57,10 +57,10 @@
             android:layout_height="75dp"
             android:background="@drawable/stylo_borde_editext"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.906"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="10dp">
+            tools:ignore="MissingConstraints">
 
             <TextView
                 android:id="@+id/TextresultCantPaneles"
@@ -106,27 +106,14 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/calculoPanelesText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/alata"
-            android:text="Calcúlo número de paneles"
-            android:textAlignment="center"
-            android:textColor="#FFEBA6"
-            android:textSize="18sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="9dp" />
-
         <ImageView
             android:id="@+id/arrowRigth"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginBottom="104dp"
+            android:layout_marginBottom="72dp"
             app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.678"
+            app:layout_constraintHorizontal_bias="0.66"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/arrow_right" />
 
@@ -219,8 +206,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/franjaInferior"
-        android:layout_width="350dp"
-        android:layout_height="40dp"
+        android:layout_width="360dp"
+        android:layout_height="45dp"
         android:background="@drawable/stylo_borde_constrain_blue"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -229,19 +216,46 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/button"
+            android:id="@+id/buttonLogout"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:rotationY="180"
+            android:rotation="180"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.95"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.6"
-            app:srcCompat="@drawable/button_header"
+            app:srcCompat="@drawable/buttonlogout"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/buttonHome"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home"
             tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/calculoPanelesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/alata"
+        android:text="Calcúlo número de paneles"
+        android:textAlignment="center"
+        android:textColor="#FFEBA6"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
