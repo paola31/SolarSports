@@ -16,7 +16,6 @@ import android.widget.TextView;
 
 public class CalculoPaneles extends AppCompatActivity
 {
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -45,5 +44,5 @@ public class CalculoPaneles extends AppCompatActivity
                 startActivity(intent);
             }
         });
-     }
+    }
 }
