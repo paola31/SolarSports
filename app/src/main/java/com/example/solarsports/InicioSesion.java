@@ -54,24 +54,24 @@ public class InicioSesion extends AppCompatActivity
         {
             public void onClick(View v)
             {
-                valorCorreo = correo.getText().toString();
+                /*valorCorreo = correo.getText().toString();
                 valorContraseña = contraseña.getText().toString();
                 if(isFormValid())
                 {
                     if(userManager.loginUser(valorCorreo, valorContraseña))
-                    {
+                    {*/
                         Intent intent = new Intent(InicioSesion.this, PantallaPpal.class);
                         startActivity(intent);
-                    }
+                    /*}
                     else
                     {
                         Toast.makeText(InicioSesion.this, "Usuario o contraseña invalidos", Toast.LENGTH_LONG).show();
-                    }
-                }
+                    }*/
+                /*}
                 else
                 {
                     Toast.makeText(InicioSesion.this, erroresValidacion, Toast.LENGTH_LONG).show();
-                }
+                }*/
 
             }
         });

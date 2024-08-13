@@ -16,21 +16,7 @@
         android:orientation="horizontal"
         tools:layout_editor_absoluteX="57dp"
         tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/button"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:rotationY="180"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.986"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/button_header"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="0dp" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        tools:ignore="MissingConstraints"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
@@ -103,19 +89,19 @@
             android:textSize="11sp" />
 
         <TextView
-            android:id="@+id/altitud"
+            android:id="@+id/longitud"
             android:layout_width="93dp"
             android:layout_height="35dp"
             android:layout_row="0"
             android:layout_column="2"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/alata"
-            android:text="Altitud"
+            android:text="Longitud"
             android:textAlignment="center"
             android:textColor="#FFEBA6" />
 
         <EditText
-            android:id="@+id/altitudDato"
+            android:id="@+id/longitudDato"
             android:layout_width="70dp"
             android:layout_height="31dp"
             android:layout_gravity="center"
@@ -161,7 +147,7 @@
             android:textColor="#FFEBA6" />
 
         <EditText
-            android:id="@+id/cantPanelDato"
+            android:id="@+id/cantidadPanelesDato"
             android:layout_width="70dp"
             android:layout_height="31dp"
             android:layout_gravity="center"
@@ -174,18 +160,6 @@
             android:textSize="11sp" />
 
     </GridLayout>
-
-    <ImageView
-        android:id="@+id/arrowLeft"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
-        app:layout_constraintEnd_toEndOf="@+id/franjaSuperior"
-        app:layout_constraintHorizontal_bias="0.853"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.079"
-        app:srcCompat="@drawable/arrow_left" />
 
     <TextView
         android:id="@+id/produccionEnergiaText"
@@ -320,7 +294,7 @@
         tools:ignore="MissingConstraints,NotSibling" />
 
     <TextView
-        android:id="@+id/fecha2"
+        android:id="@+id/energiaGenerada"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -338,6 +312,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.803"
         tools:ignore="MissingConstraints" />
+
+    <include
+        android:id="@+id/navigationBar"
+        layout="@layout/navigation_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

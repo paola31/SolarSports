@@ -60,7 +60,8 @@ public class Estadisticas extends AppCompatActivity
     }
 
 
-    private void setupLineChart() {
+    private void setupLineChart()
+    {
         lineChart.getDescription().setEnabled(false);
         lineChart.setTouchEnabled(true);
         lineChart.setDragEnabled(true);

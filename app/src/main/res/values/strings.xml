@@ -15,8 +15,9 @@
     <string name="selecciona">Seleccionar</string>
     <string name="Código">código</string>
     <string-array name="spinnner_options">
-        <item>Panel monocristalino</item>
-        <item>Panel policristalino</item>
-        <item>Panel solar flexible</item>
+        <item>Seleccionar</item>
+        <item>Monocristalino</item>
+        <item>Policristalino</item>
+        <item>Flexible</item>
     </string-array>
 </resources>
