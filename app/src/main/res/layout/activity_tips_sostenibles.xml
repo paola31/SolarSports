@@ -8,178 +8,197 @@
     android:visibility="visible"
     tools:context=".TipsSostenibles">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/franjaSuperior"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:background="#66958566"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints">
+    <include
+        android:id="@+id/name_user_date"
+        layout="@layout/name_user_date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-        <ImageView
-            android:id="@+id/button"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:rotationY="180"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.986"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/button_header"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="0dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <ImageView
-        android:id="@+id/arrowLeft"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        app:layout_constraintEnd_toEndOf="@+id/franjaSuperior"
-        app:layout_constraintHorizontal_bias="0.856"
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="335dp"
+        android:layout_height="470dp"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/arrow_left" />
-
-    <TextView
-        android:id="@+id/tipsSosteniblesText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="52dp"
-        android:fontFamily="@font/alata"
-        android:text="Tips sostenibles"
-        android:textAlignment="center"
-        android:textColor="#FFEBA6"
-        android:textSize="18sp"
-        app:layout_constraintTop_toTopOf="@+id/franjaSuperior"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="350dp"
-        android:layout_height="270dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/franjaSuperior"
-        app:layout_constraintVertical_bias="0.147"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp">
+        app:layout_constraintVertical_bias="0.231">
 
         <LinearLayout
-            android:layout_width="350dp"
-            android:layout_height="250dp"
-            android:orientation="vertical">
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
 
             <TextView
-                android:id="@+id/EnergiaText"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="77dp"
                 android:layout_gravity="center"
-                android:fontFamily="@font/alata"
-                android:text="Energía cinética para gimansios "
-                android:textAlignment="center"
-                android:textColor="#B2852C"
-                android:textSize="16sp"
-                tools:ignore="MissingConstraints" />
-
-            <ImageView
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:layout_gravity="center"
-                android:background="@drawable/bicycle" />
-
-            <TextView
-                android:id="@+id/infoCinetica"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="#33363F"
-                android:fontFamily="@font/alata"
-                android:text="Un gimnasio ecológico abierto en Rochester, Nueva York, que no consume electricidad, sino al revés: sus máquinas de ejercicio crean electricidad. Porque el Eco Gym está equipado con una serie de bicicletas estáticas que se dedican a capturar la energía producida durante una sesión de cardio y transformarla en electricidad para dar luz al edificio entero en el que el Eco Gym está ubicado. El Eco Gym dispone de 21 máquinas de cardio distribuidas entre bicis estáticas, elípticas y bicis reclinadas. Cada una está preparada para convertir la energía humana derivada del pedaleo en electricidad útil y aprovechable a través de una tecnología ‘micro-inversora’ ,capaz de transformar la sesión de cardio en más de 160 vatios a la hora. "
+                android:lineSpacingExtra="5dp"
+                android:padding="18dp"
+                android:text="🌤️Optimiza la orientación de tus paneles solares"
                 android:textAlignment="center"
                 android:textColor="#A4ABAB"
-                android:textSize="14sp"
-                tools:ignore="MissingConstraints" />
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/tip1_image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/tip1" />
+
+            <ScrollView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/stylo_borde_constrain_blue"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/alata"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="12dp"
+                    android:text="Para maximizar la eficiencia de tus paneles solares, asegúrate de que estén orientados hacia el sur (en el hemisferio norte) o hacia el norte (en el hemisferio sur). Esto permite que los paneles reciban la mayor cantidad de luz solar directa durante el día. Además, considera ajustar el ángulo de inclinación de los paneles para que coincida con la latitud de tu ubicación, lo que también ayudará a captar más luz solar a lo largo del año."
+                    android:textAlignment="center"
+                    android:textColor="#A4ABAB"
+                    android:textSize="15sp" />
+            </ScrollView>
         </LinearLayout>
-    </ScrollView>
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="655dp"
+            android:orientation="vertical"
+            android:padding="5dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="350dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="350dp"
-        android:background="@drawable/stylo_borde_constrain"
-        android:backgroundTint="#33363F"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.621">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="77dp"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:padding="18dp"
+                android:text="🌤️Transforma tu rutina de gimnasio en energía limpia "
+                android:textAlignment="center"
+                android:textColor="#A4ABAB"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/alidosOpciones"
-            android:layout_width="140dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:fontFamily="@font/alata"
-            android:text="*Autosolar Colombia *SolarGreen *Copérnico sas"
-            android:textColor="#FFEBA6"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.066"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="4dp" />
+            <ImageView
+                android:id="@+id/tip2_image"
+                android:layout_width="match_parent"
+                android:layout_height="163dp"
+                app:srcCompat="@drawable/tip2" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <ScrollView
+                android:layout_width="300dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/stylo_borde_constrain_blue"
+                android:padding="10dp">
 
-    <TextView
-        android:id="@+id/aliados"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="@font/alata"
-        android:text="Conocé nuestros aliados"
-        android:textAlignment="center"
-        android:textColor="#B2852C"
-        android:textSize="18sp"
-        android:layout_marginTop="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.687"
-        tools:ignore="MissingConstraints" />
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/alata"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="12dp"
+                    android:text="Convierte tu tiempo en el gimnasio en una oportunidad para generar energía limpia. Al utilizar bicicletas estáticas equipadas con tecnología de generación de energía, cada sesión de entrenamiento contribuye a producir electricidad que puede ser utilizada para alimentar las instalaciones del gimnasio o incluso devolver a la red eléctrica. No solo estás mejorando tu salud y forma física, sino que también ayudas a reducir la huella de carbono del gimnasio. Pedalea con propósito y haz que tu esfuerzo en el gimnasio beneficie tanto a tu bienestar como al medio ambiente,La electricidad generada se convierte en una forma tangible de ver el impacto de tu esfuerzo físico, lo que puede añadir una capa extra de motivación y compromiso con tu entrenamiento!"
+                    android:textAlignment="center"
+                    android:textColor="#A4ABAB"
+                    android:textSize="15sp" />
+            </ScrollView>
+        </LinearLayout>
 
-    <ImageView
-        android:id="@+id/icono"
-        android:layout_width="70dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.779"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.656"
-        app:srcCompat="@drawable/energy_sharing_power"
-        tools:ignore="MissingConstraints" />
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="655dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="77dp"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:padding="18dp"
+                android:text="🌤️Maximiza el rendimiento de tu recinto deportivo con energía solar\n "
+                android:textAlignment="center"
+                android:textColor="#A4ABAB"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/tip4_image"
+                android:layout_width="match_parent"
+                android:layout_height="163dp"
+                app:srcCompat="@drawable/tip4" />
+
+            <ScrollView
+                android:layout_width="300dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/stylo_borde_constrain_blue"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/alata"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="12dp"
+                    android:text="Invierte en paneles solares para tu recinto deportivo y transforma cada rayo de sol en una fuente de energía sostenible. La instalación de paneles solares no solo reduce significativamente los costos de energía, sino que también mejora la sostenibilidad del recinto. Aprovecha el espacio disponible en techos y áreas al aire libre para captar energía solar y minimizar la dependencia de fuentes de energía convencionales. Además, la adopción de energía solar puede ser un gran atractivo para los patrocinadores y una excelente forma de demostrar el compromiso del recinto con el medio ambiente. ¡Haz de tu recinto deportivo un líder en sostenibilidad y marca la diferencia con cada partido y entrenamiento!"
+                    android:textAlignment="center"
+                    android:textColor="#A4ABAB"
+                    android:textSize="15sp" />
+            </ScrollView>
+        </LinearLayout>
+    </ViewFlipper>
 
     <LinearLayout
-        android:layout_width="250dp"
+        android:id="@+id/redesSociales"
+        android:layout_width="320dp"
         android:layout_height="50dp"
+        android:gravity="center_horizontal"
         android:orientation="horizontal"
-        android:layout_marginTop="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.883"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toBottomOf="@+id/viewFlipper"
+        app:layout_constraintTop_toTopOf="@+id/viewFlipper"
+        app:layout_constraintVertical_bias="0.94">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="77dp"
+            android:layout_gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:paddingTop="16dp"
+            android:text="\n   📲 Compartir en redes     "
+            android:textAlignment="textStart"
+            android:textColor="#A4ABAB"
+            android:textSize="10sp"
+            tools:ignore="RtlCompat" />
 
         <ImageView
             android:id="@+id/iconFacebook"
@@ -210,5 +229,12 @@
             app:srcCompat="@drawable/tiktok" />
 
     </LinearLayout>
+
+    <include
+        android:id="@+id/navigationBar"
+        layout="@layout/navigation_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

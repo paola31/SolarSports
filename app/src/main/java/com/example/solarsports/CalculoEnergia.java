@@ -39,6 +39,8 @@ public class CalculoEnergia extends BaseActivity
         TextView energiaGenerada = findViewById(R.id.energiaGenerada);
         TextView calcularEnergia = findViewById(R.id.calcularEnergia);
         ImageView iconCasa = findViewById(R.id.iconCasa);
+        energiaGenerada.setText("0.00 Kw / Dia");
+
         calcularEnergia.setOnClickListener(new View.OnClickListener()
         {
             @Override

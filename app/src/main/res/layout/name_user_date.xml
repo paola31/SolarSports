@@ -55,15 +55,4 @@
         app:layout_constraintVertical_bias="0.454"
         app:srcCompat="@drawable/baseline_person_pin_24" />
 
-    <ImageView
-        android:id="@+id/search"
-        android:layout_width="21dp"
-        android:layout_height="21dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.618"
-        app:layout_constraintStart_toEndOf="@+id/nombreUsuario"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.454"
-        app:srcCompat="@drawable/search" />
 </androidx.constraintlayout.widget.ConstraintLayout>
