@@ -49,7 +49,7 @@ public class Registro extends AppCompatActivity
 
                 if(isFormValid())
                 {
-                    userManager.registerUser(correo.getText().toString(), contraseñaRegistro.getText().toString());
+                    userManager.registerUser(correo.getText().toString(), contraseñaRegistro.getText().toString(), nombre.getText().toString());
                     Toast.makeText(Registro.this, "Registro exitoso", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(Registro.this, InicioSesion.class);
                     startActivity(intent);

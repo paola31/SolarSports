@@ -8,6 +8,13 @@
     android:visibility="visible"
     tools:context=".CalculoPaneles">
 
+    <include
+        android:id="@+id/name_user_date"
+        layout="@layout/name_user_date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <GridLayout
         android:id="@+id/gridLayoutBoar6"
         android:layout_width="wrap_content"
@@ -26,14 +33,15 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="335dp"
-        android:layout_height="363dp"
+        android:layout_height="440dp"
         android:layout_row="0"
         android:layout_column="2"
         android:background="@drawable/stylo_borde_constrain"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636">
 
         <TextView
             android:id="@+id/calcular"
@@ -44,39 +52,40 @@
             android:text="Calcular"
             android:textAlignment="center"
             android:textColor="#FFEBA6"
-            android:textSize="18sp"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.662"
+            app:layout_constraintVertical_bias="0.703"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="10dp" />
+            tools:layout_editor_absoluteX="4dp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="320dp"
             android:layout_height="75dp"
+            android:layout_marginStart="4dp"
             android:background="@drawable/stylo_borde_editext"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.906"
+            app:layout_constraintVertical_bias="0.957"
             tools:ignore="MissingConstraints">
 
             <TextView
                 android:id="@+id/TextresultCantPaneles"
-                android:layout_width="220dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/kanit"
                 android:text="Cantidad de paneles solares necesarios:"
                 android:textColor="#33363F"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.265"
                 app:layout_constraintStart_toEndOf="@+id/hands"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.476"
+                app:layout_constraintVertical_bias="0.343"
                 tools:ignore="MissingConstraints" />
 
             <TextView
@@ -88,21 +97,23 @@
                 android:text="5 Paneles"
                 android:textAlignment="center"
                 android:textColor="#B2852C"
-                android:textSize="19sp"
+                android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.723"
                 app:layout_constraintStart_toStartOf="@+id/hands"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.68"
                 tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/hands"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="61dp"
+                android:layout_height="59dp"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/hand"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="-1dp" />
+                tools:ignore="MissingConstraints" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -110,99 +121,98 @@
             android:id="@+id/arrowRigth"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginBottom="72dp"
+            android:layout_marginBottom="84dp"
             app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.66"
+            app:layout_constraintHorizontal_bias="0.653"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/calcular"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/arrow_right" />
+
+        <GridLayout
+            android:id="@+id/gridLayoutBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:columnCount="2"
+            android:padding="8dp"
+            android:rowCount="4"
+            app:circularflow_radiusInDP="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="14dp">
+
+            <TextView
+                android:id="@+id/tipoPanel"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/alata"
+                android:text="Tipo de panel"
+                android:textAlignment="textStart"
+                android:textColor="#FFEBA6" />
+
+            <Spinner
+                android:id="@+id/opciones"
+                style="@style/StyleSpinner"
+                android:layout_width="139dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/stylo_borde_editext"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/horaPico"
+                android:layout_width="111dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/alata"
+                android:text="Hora pico solar/Día"
+                android:textAlignment="textStart"
+                android:textColor="#FFEBA6" />
+
+            <EditText
+                android:id="@+id/hps"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/stylo_borde_editext"
+                android:ems="10"
+                android:hint="0000 Hrs/Dia"
+                android:inputType="numberDecimal"
+                android:textColorHint="#A4ABAB"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/consumoHabitual"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/alata"
+                android:text="Consumo de energía&#10;habitual/Día"
+                android:textAlignment="textStart"
+                android:textColor="#FFEBA6"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/consumoEnergia"
+                android:layout_width="141dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/stylo_borde_editext"
+                android:ems="10"
+                android:hint="0000 Kw/Dia"
+                android:inputType="numberDecimal"
+                android:textColorHint="#A4ABAB"
+                android:textSize="11sp" />
+
+        </GridLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <GridLayout
-        android:id="@+id/gridLayoutBoard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:columnCount="2"
-        android:padding="8dp"
-        android:rowCount="4"
-        android:layout_marginTop="-60dp"
-        app:circularflow_radiusInDP="@string/app_name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427">
-
-        <TextView
-            android:id="@+id/tipoPanel"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/alata"
-            android:text="Tipo de panel"
-            android:textAlignment="center"
-            android:textColor="#FFEBA6" />
-
-        <Spinner
-            android:id="@+id/opciones"
-            style="@style/StyleSpinner"
-            android:layout_width="130dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:background="@drawable/stylo_borde_editext"
-            android:spinnerMode="dropdown" />
-
-        <TextView
-            android:id="@+id/horaPico"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/alata"
-            android:text="Hora pico solar/Día"
-            android:textAlignment="center"
-            android:textColor="#FFEBA6" />
-
-        <EditText
-            android:id="@+id/hps"
-            android:layout_width="130dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/stylo_borde_editext"
-            android:ems="10"
-            android:hint="0000 Kw/Dia"
-            android:inputType="text"
-            android:textColorHint="#A4ABAB"
-            android:textSize="11sp" />
-
-        <TextView
-            android:id="@+id/consumoHabitual"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/alata"
-            android:text="Consumo de energía&#10;habitual"
-            android:textAlignment="center"
-            android:textColor="#FFEBA6" />
-
-        <EditText
-            android:id="@+id/consumoEnergia"
-            android:layout_width="130dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/stylo_borde_editext"
-            android:ems="10"
-            android:hint="0000 Kw/Dia"
-            android:inputType="text"
-            android:textColorHint="#A4ABAB"
-            android:textSize="11sp" />
-
-    </GridLayout>
 
     <include
         android:id="@+id/navigationBar"
@@ -223,9 +233,9 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.698"
+        app:layout_constraintVertical_bias="0.784"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class RecuperarContrasena extends AppCompatActivity
 {
@@ -25,7 +26,14 @@ public class RecuperarContrasena extends AppCompatActivity
         content.setSpan(new UnderlineSpan(), 0, content.length(),0);
         textViewCalcular.setText(content);
 
-
+        textViewCalcular.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Toast.makeText(RecuperarContrasena.this, "Código enviado a tu correo", Toast.LENGTH_LONG).show();
+            }
+        });
 
         ImageButton logoutButton = findViewById(R.id.logOut);
         logoutButton.setOnClickListener(new View.OnClickListener()

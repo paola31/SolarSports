@@ -24,6 +24,7 @@ public class CalculoPaneles extends BaseActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculo_paneles);
         setupNavigationBar();
+        setupTopBar();
 
         Spinner spinner = findViewById(R.id.opciones);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.spinnner_options, R.layout.spinner_item);
@@ -35,6 +36,8 @@ public class CalculoPaneles extends BaseActivity
         EditText consumoEnergia = findViewById(R.id.consumoEnergia);
 
         TextView resultado = findViewById(R.id.cantidadPaneles);
+
+        resultado.setText(" 0 paneles");
 
         TextView textViewCalcular = findViewById(R.id.calcular);
         SpannableString calcularContent = new SpannableString("Calcular");

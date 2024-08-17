@@ -8,6 +8,7 @@ public class UserSessionManager
     private static final String PREF_NAME = "UserPrefs";
     private static final String KEY_EMAIL = "email";
     private static final String KEY_PASSWORD = "password";
+    private static final String KEY_NAME = "userName";
 
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
@@ -18,10 +19,11 @@ public class UserSessionManager
         editor = sharedPreferences.edit();
     }
 
-    public void registerUser(String email, String password)
+    public void registerUser(String email, String password, String name)
     {
         editor.putString(KEY_EMAIL, email);
         editor.putString(KEY_PASSWORD, password);
+        editor.putString(KEY_NAME, name);
         editor.apply();
     }
 
@@ -31,5 +33,10 @@ public class UserSessionManager
         String registeredPassword = sharedPreferences.getString(KEY_PASSWORD, null);
 
         return email.equals(registeredEmail) && password.equals(registeredPassword);
+    }
+
+    public String getName()
+    {
+        return sharedPreferences.getString(KEY_NAME, "Usuario");
     }
 }

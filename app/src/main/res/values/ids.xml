@@ -2,4 +2,5 @@
 
 <resources>
     <item name="imageView_vector" type="id" />
+    <item name="linearLayout" type="id" />
 </resources>

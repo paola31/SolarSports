@@ -13,9 +13,9 @@ import android.widget.Toast;
 public class InicioSesion extends AppCompatActivity
 {
     private EditText correo;
-    private EditText contraseña;
+    private EditText contrasena;
     private String valorCorreo;
-    private String valorContraseña;
+    private String valorContrasena;
     private UserSessionManager userManager;
     private String erroresValidacion = "";
 
@@ -26,7 +26,7 @@ public class InicioSesion extends AppCompatActivity
         setContentView(R.layout.activity_inicio_sesion);
 
         correo = findViewById(R.id.nombreOusuario);
-        contraseña = findViewById(R.id.contraseña);
+        contrasena = findViewById(R.id.contraseña);
         userManager = new UserSessionManager(this);
 
         TextView textView = findViewById(R.id.olvidasteContraseña);
@@ -48,31 +48,34 @@ public class InicioSesion extends AppCompatActivity
                 startActivity(intent);
             }
         });
-
         ImageButton imageButtonlogin = findViewById(R.id.login_Sesion);
         imageButtonlogin.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
+                Intent intent = new Intent(InicioSesion.this, PantallaPpal.class);
+                startActivity(intent);
+                finish();
+
                 /*valorCorreo = correo.getText().toString();
-                valorContraseña = contraseña.getText().toString();
+                valorContrasena = contrasena.getText().toString();
                 if(isFormValid())
                 {
-                    if(userManager.loginUser(valorCorreo, valorContraseña))
-                    {*/
+                    if(userManager.loginUser(valorCorreo, valorContrasena))
+                    {
                         Intent intent = new Intent(InicioSesion.this, PantallaPpal.class);
                         startActivity(intent);
-                    /*}
+                        finish();
+                    }
                     else
                     {
                         Toast.makeText(InicioSesion.this, "Usuario o contraseña invalidos", Toast.LENGTH_LONG).show();
-                    }*/
-                /*}
+                    }
+                }
                 else
                 {
                     Toast.makeText(InicioSesion.this, erroresValidacion, Toast.LENGTH_LONG).show();
                 }*/
-
             }
         });
     }
@@ -82,7 +85,7 @@ public class InicioSesion extends AppCompatActivity
         boolean isValid = true;
         erroresValidacion = "";
 
-        if(valorCorreo.isEmpty() || valorContraseña.isEmpty())
+        if(valorCorreo.isEmpty() || valorContrasena.isEmpty())
         {
             erroresValidacion = erroresValidacion + "Ambos campos son obligatorios"  + "\n";
             isValid = false;
@@ -97,4 +100,5 @@ public class InicioSesion extends AppCompatActivity
 
         return  isValid;
     }
+
 }

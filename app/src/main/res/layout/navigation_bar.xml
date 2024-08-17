@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/franjaInferior"
     android:layout_width="360dp"
-    android:layout_height="45dp"
+    android:layout_height="35dp"
     android:background="@drawable/stylo_borde_constrain_blue"
     android:orientation="horizontal"
     app:layout_constraintBottom_toBottomOf="parent"
@@ -14,8 +14,8 @@
 
     <ImageView
         android:id="@+id/buttonLogout"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="21dp"
+        android:layout_height="22dp"
         android:rotation="180"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,8 +27,8 @@
 
     <ImageView
         android:id="@+id/buttonHome"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="21dp"
+        android:layout_height="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.089"
@@ -36,5 +36,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/home"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLogout"
+        app:layout_constraintStart_toEndOf="@+id/buttonHome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/person_outline" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -46,7 +46,7 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/stylo_borde_editext"
             android:ems="10"
-            android:hint="@string/nombre_o_usuario_hint"
+            android:hint="Correo"
             android:inputType="text"
             android:textColorHint="#A4ABAB"
             android:textSize="11sp" />
@@ -67,8 +67,8 @@
 
         <ImageButton
             android:id="@+id/login_Sesion"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:backgroundTint="#454E5F"

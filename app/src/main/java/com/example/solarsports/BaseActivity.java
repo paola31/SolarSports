@@ -1,13 +1,20 @@
 package com.example.solarsports;
 
 import android.content.Intent;
+import android.os.Build;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class BaseActivity extends AppCompatActivity
 {
+    UserSessionManager userManager;
+
     protected void setupNavigationBar()
     {
         ImageView buttonHome = findViewById(R.id.buttonHome);
@@ -34,4 +41,26 @@ public class BaseActivity extends AppCompatActivity
             });
         }
     }
+
+    protected void setupTopBar()
+    {
+        userManager = new UserSessionManager(this);
+        TextView nombreUsuario = findViewById(R.id.nombreUsuario);
+        nombreUsuario.setText("Bienvenid@, " + userManager.getName());
+
+        TextView fechaActual = findViewById(R.id.fecha);  // Asegúrate de que este ID exista en tu layout
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
+        {
+            LocalDate fecha = LocalDate.now();
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern( "dd/MM/yyyy");
+            String fechaFormateada = fecha.format(formatter);
+
+            String resultado = "Hoy, " + fechaFormateada;
+
+            fechaActual.setText(resultado);
+        }
+    }
+
+
 }

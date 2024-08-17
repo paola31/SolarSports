@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
-public class PantallaPpal extends AppCompatActivity
+public class PantallaPpal extends BaseActivity
 {
 
     @Override
@@ -17,6 +17,8 @@ public class PantallaPpal extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla_ppal);
+        setupNavigationBar();
+        setupTopBar();
 
         Button button = findViewById(R.id.calculoPaneles);
         button.setOnClickListener(new View.OnClickListener()
@@ -29,16 +31,6 @@ public class PantallaPpal extends AppCompatActivity
             }
         });
 
-        ImageView imageViewLogout = findViewById(R.id.button);
-        imageViewLogout.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent = new Intent(PantallaPpal.this, InicioSesion.class);
-                startActivity(intent);
-            }
-        });
 
         Button buttonEnergia = findViewById(R.id.calculoEnergia);
         buttonEnergia.setOnClickListener(new View.OnClickListener()
