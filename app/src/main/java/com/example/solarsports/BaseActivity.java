@@ -48,7 +48,7 @@ public class BaseActivity extends AppCompatActivity
         TextView nombreUsuario = findViewById(R.id.nombreUsuario);
         nombreUsuario.setText("Bienvenid@, " + userManager.getName());
 
-        TextView fechaActual = findViewById(R.id.fecha);  // Asegúrate de que este ID exista en tu layout
+        TextView fechaActual = findViewById(R.id.fecha);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
         {
