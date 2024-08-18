@@ -1,14 +1,14 @@
 package com.example.solarsports;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Patterns;
-import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.content.Intent;
+import android.util.Patterns;
 import android.widget.Toast;
+import android.os.Bundle;
+import android.view.View;
 
 public class InicioSesion extends AppCompatActivity
 {
@@ -16,7 +16,7 @@ public class InicioSesion extends AppCompatActivity
     private EditText contrasena;
     private String valorCorreo;
     private String valorContrasena;
-    private UserSessionManager userManager;
+    private DataManager userManager;
     private String erroresValidacion = "";
 
     @Override
@@ -27,10 +27,10 @@ public class InicioSesion extends AppCompatActivity
 
         correo = findViewById(R.id.nombreOusuario);
         contrasena = findViewById(R.id.contraseña);
-        userManager = new UserSessionManager(this);
+        userManager = new DataManager(this);
 
-        TextView textView = findViewById(R.id.olvidasteContraseña);
-        textView.setOnClickListener(new View.OnClickListener()
+        TextView olvidasteContrasena = findViewById(R.id.olvidasteContraseña);
+        olvidasteContrasena.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
@@ -48,16 +48,13 @@ public class InicioSesion extends AppCompatActivity
                 startActivity(intent);
             }
         });
+
         ImageButton imageButtonlogin = findViewById(R.id.login_Sesion);
         imageButtonlogin.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
-                Intent intent = new Intent(InicioSesion.this, PantallaPpal.class);
-                startActivity(intent);
-                finish();
-
-                /*valorCorreo = correo.getText().toString();
+                valorCorreo = correo.getText().toString();
                 valorContrasena = contrasena.getText().toString();
                 if(isFormValid())
                 {
@@ -75,7 +72,7 @@ public class InicioSesion extends AppCompatActivity
                 else
                 {
                     Toast.makeText(InicioSesion.this, erroresValidacion, Toast.LENGTH_LONG).show();
-                }*/
+                }
             }
         });
     }

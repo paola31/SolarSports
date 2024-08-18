@@ -5,137 +5,154 @@
     android:background="#454E5F"
     tools:context=".Estadisticas">
 
+    <include
+        android:id="@+id/name_user_date"
+        layout="@layout/name_user_date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/calculoPanelesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/alata"
+        android:text="Calcúlo número de paneles"
+        android:textAlignment="center"
+        android:textColor="#FFEBA6"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp" />
+
+
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="88dp"
         android:layout_marginEnd="1dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/franjaSuperior"
+
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/barChart"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:background="#66958566"
-            android:orientation="horizontal"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="57dp"
-            tools:layout_editor_absoluteY="0dp">
-
-            <ImageView
-                android:id="@+id/button"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:rotationY="180"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.986"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/button_header"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="0dp" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <com.github.mikephil.charting.charts.LineChart
-            android:id="@+id/lineChart"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:background="#958566"
-            android:alpha=".3"
-            android:layout_marginTop="100dp" />
+            android:layout_height="352dp"
+            android:layout_marginTop="18dp"
+            android:alpha=".4"
+            android:background="#A4ABAB" />
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/arrowLeft"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginStart="330dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:background="@drawable/stylo_borde_editext"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.983"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout1"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/arrow_left"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/estadisticasanual"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="@font/alata"
-        android:text="Estadídticas de energía anual"
-        android:textAlignment="center"
-        android:textColor="#FFEBA6"
-        android:layout_marginTop="-380dp"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout1"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/compartirReddes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="450dp"
-        android:fontFamily="@font/alata"
-        android:text="Compartir en redes"
-        android:textAlignment="center"
-        android:textColor="#FFEBA6"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout1"
-        app:layout_constraintVertical_bias="0.726"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <LinearLayout
-        android:layout_width="200dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="400dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.767"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+        app:layout_constraintVertical_bias="0.383"
         tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/iconFacebook"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+        <TextView
+            android:id="@+id/ahorroDiario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/facebook" />
+            android:fontFamily="@font/kanit"
+            android:text="Ahorro promedio DIARIO es: "
+            android:textColor="#33363F"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/moneyDiario"
+            app:layout_constraintHorizontal_bias="0.804"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.271"
+            tools:ignore="MissingConstraints" />
 
-        <ImageView
-            android:id="@+id/iconInstagram"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+        <TextView
+            android:id="@+id/ahorroMensual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/instagram" />
+            android:fontFamily="@font/kanit"
+            android:text="Ahorro promedio ANUAL es: "
+            android:textColor="#33363F"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.379"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ahorroDiario"
+            app:layout_constraintVertical_bias="0.05"
+            tools:ignore="MissingConstraints" />
 
-        <ImageView
-            android:id="@+id/iconlinkedin"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+        <TextView
+            android:id="@+id/moneyDiario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/linkedin" />
+            android:fontFamily="@font/alata"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#B2852C"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/moneyAnual"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.704"
+            app:layout_constraintStart_toEndOf="@+id/ahorroMensual"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.189"
+            tools:ignore="MissingConstraints" />
 
-        <ImageView
-            android:id="@+id/icontiktok"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+        <TextView
+            android:id="@+id/moneyAnual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/tiktok" />
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/alata"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#B2852C"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.723"
+            app:layout_constraintStart_toEndOf="@+id/ahorroMensual"
+            app:layout_constraintTop_toBottomOf="@+id/ahorroDiario"
+            app:layout_constraintVertical_bias="0.589"
+            tools:ignore="MissingConstraints" />
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/greenli"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/greenli" />
+
+    <include
+        android:id="@+id/navigationBar"
+        layout="@layout/navigation_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

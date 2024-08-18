@@ -27,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.231">
 
-        <LinearLayout
+      <LinearLayout
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -52,19 +52,20 @@
                 app:srcCompat="@drawable/tip1" />
 
             <ScrollView
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
+                android:layout_width="304dp"
+                android:layout_height="205dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/stylo_borde_constrain_blue"
-                android:padding="10dp">
+                android:padding="10dp"
+                tools:visibility="visible">
 
                 <TextView
                     android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|top"
                     android:fontFamily="@font/alata"
                     android:justificationMode="inter_word"
                     android:lineSpacingExtra="5dp"
@@ -75,16 +76,17 @@
                     android:textSize="15sp" />
             </ScrollView>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="330dp"
-            android:layout_height="655dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="77dp"
-                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|top"
                 android:lineSpacingExtra="5dp"
                 android:padding="18dp"
                 android:text="🌤️Transforma tu rutina de gimnasio en energía limpia "
@@ -100,8 +102,8 @@
                 app:srcCompat="@drawable/tip2" />
 
             <ScrollView
-                android:layout_width="300dp"
-                android:layout_height="350dp"
+                android:layout_width="297dp"
+                android:layout_height="220dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="0dp"
@@ -112,7 +114,7 @@
                 <TextView
                     android:layout_width="300dp"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center|top"
                     android:fontFamily="@font/alata"
                     android:justificationMode="inter_word"
                     android:lineSpacingExtra="5dp"
@@ -150,7 +152,7 @@
 
             <ScrollView
                 android:layout_width="300dp"
-                android:layout_height="350dp"
+                android:layout_height="223dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="0dp"
@@ -161,7 +163,7 @@
                 <TextView
                     android:layout_width="300dp"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center|top"
                     android:fontFamily="@font/alata"
                     android:justificationMode="inter_word"
                     android:lineSpacingExtra="5dp"

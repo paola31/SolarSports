@@ -13,7 +13,7 @@ import java.time.format.DateTimeFormatter;
 
 public class BaseActivity extends AppCompatActivity
 {
-    UserSessionManager userManager;
+    DataManager userManager;
 
     protected void setupNavigationBar()
     {
@@ -44,7 +44,7 @@ public class BaseActivity extends AppCompatActivity
 
     protected void setupTopBar()
     {
-        userManager = new UserSessionManager(this);
+        userManager = new DataManager(this);
         TextView nombreUsuario = findViewById(R.id.nombreUsuario);
         nombreUsuario.setText("Bienvenid@, " + userManager.getName());
 

@@ -1,28 +1,25 @@
 package com.example.solarsports;
 
-import android.content.Intent;
-import android.os.Build;
-import android.os.Bundle;
-import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
-import android.util.Patterns;
-import android.view.View;
-import android.widget.EditText;
+import android.text.SpannableString;
 import android.widget.ImageView;
+import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.math.BigDecimal;
+import android.content.Intent;
 import java.math.RoundingMode;
+import java.math.BigDecimal;
+import android.widget.Toast;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import android.view.View;
+import android.os.Bundle;
 
 public class CalculoEnergia extends BaseActivity
 {
-    EditText latitud;
-    EditText longitud;
-    EditText inclinacion;
+    DataManager dataManager;
     EditText cantidadPaneles;
+    EditText inclinacion;
+    EditText longitud;
+    EditText latitud;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -32,6 +29,7 @@ public class CalculoEnergia extends BaseActivity
         setupNavigationBar();
         setupTopBar();
 
+        dataManager = new DataManager(this);
         latitud = findViewById(R.id.latitudDato);
         longitud = findViewById(R.id.longitudDato);
         inclinacion = findViewById(R.id.inclinacionDato);
@@ -51,19 +49,15 @@ public class CalculoEnergia extends BaseActivity
                     Toast.makeText(CalculoEnergia.this, "Todos los campos deden estar dilegenciados", Toast.LENGTH_LONG).show();
                     return;
                 }
-                String latitudString = latitud.getText().toString();
-                latitudString = latitudString.isEmpty() ? "20" : latitudString;
-                Double latidudValue = Double.parseDouble(latitudString);
 
+                Double latidudValue = Double.parseDouble(latitud.getText().toString());
                 Double longitudValue = Double.parseDouble(longitud.getText().toString());
                 int inclinacionValue = Integer.parseInt(inclinacion.getText().toString());
                 int cantidadPanelesValues = Integer.parseInt(cantidadPaneles.getText().toString());
-
+                dataManager.persistEnergyValues(Float.parseFloat(latitud.getText().toString()), Float.parseFloat(longitud.getText().toString()), inclinacionValue, cantidadPanelesValues);
                 double energia = calcularProduccionEnergia(latidudValue, longitudValue, cantidadPanelesValues, inclinacionValue);
-
                 BigDecimal energiaAcotada = new BigDecimal(energia).setScale(2, RoundingMode.HALF_UP);
                 energiaGenerada.setText(energiaAcotada + " Kw / Dia");
-
                 iconCasa.setVisibility(View.VISIBLE);
             }
         });
@@ -79,6 +73,11 @@ public class CalculoEnergia extends BaseActivity
             @Override
             public void onClick(View v)
             {
+                if (!isFormatValid())
+                {
+                    Toast.makeText(CalculoEnergia.this, "Todos los campos deden estar dilegenciados", Toast.LENGTH_LONG).show();
+                    return;
+                }
                 Intent intent = new Intent(CalculoEnergia.this, Estadisticas.class);
                 startActivity(intent);
             }

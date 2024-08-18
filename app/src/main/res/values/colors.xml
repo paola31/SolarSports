@@ -3,4 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="purple_200">#FF000000</color>
+    <color name="custom_max">#CC8A09</color>
+    <color name="axis">#1E1E1E</color>
+    <color name="custom_min">#5A5C5C</color>
 </resources>

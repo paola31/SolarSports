@@ -1,7 +1,6 @@
 package com.example.solarsports;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatCheckBox;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +8,6 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.util.Patterns;
 import android.widget.Toast;
 
@@ -24,7 +22,7 @@ public class Registro extends AppCompatActivity
     private ImageButton login_Registro;
     private String erroresValidacion = "";
 
-    private UserSessionManager userManager;
+    private DataManager userManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -40,7 +38,7 @@ public class Registro extends AppCompatActivity
         tratamientoDatos = findViewById(R.id.tratamientoDatos);
         login_Registro = findViewById(R.id.registrar);
 
-        userManager = new UserSessionManager(this);
+        userManager = new DataManager(this);
 
         login_Registro.setOnClickListener(new View.OnClickListener() {
             @Override
